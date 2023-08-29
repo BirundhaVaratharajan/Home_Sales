@@ -7,12 +7,17 @@ Using SparkSQL following questions have been answered
 
 1.What is the average price for a four-bedroom house sold for each year? Round off your answer to two decimal places.
 
+
 |year|4Bed_Average_price|
-+----+------------------+
+
 |2019|          300263.7|
+
 |2020|         298353.78|
+
 |2021|         301819.44|
+
 |2022|         296363.88
+
 
 
 2.What is the average price of a home for each year it was built that has three bedrooms and three bathrooms? Round off your answer to two decimal places.
