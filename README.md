@@ -23,28 +23,46 @@ Using SparkSQL following questions have been answered
 2.What is the average price of a home for each year it was built that has three bedrooms and three bathrooms? Round off your answer to two decimal places.
 
 date_built|3Bed_Average_price|
+
 +----------+------------------+
+
 |      2010|         292859.62|
+
 |      2011|         291117.47|
+
 |      2012|         293683.19|
+
 |      2013|         295962.27|
+
 |      2014|         290852.27|
+
 |      2015|          288770.3|
+
 |      2016|         290555.07|
+
 |      2017|         292676.79
 
 
 3.What is the average price of a home for each year that has three bedrooms, three bathrooms, two floors, and is greater than or equal to 2,000 square feet? Round off your answer to two decimal places.
 
 date_built|2floor_Average_price|
+
 +----------+--------------------+
+
 |      2010|           285010.22|
+
 |      2011|           276553.81|
+
 |      2012|           307539.97|
+
 |      2013|           303676.79|
+
 |      2014|           298264.72|
+
 |      2015|           297609.97|
+
 |      2016|            293965.1|
+
 |      2017|           280317.58|
 
 
@@ -53,7 +71,9 @@ date_built|2floor_Average_price|
 
 
 view|Average_price|
+
 +----+-------------+
+
 |  51|    788128.21|
 |  54|    798684.82|
 |  69|    750537.94|
@@ -74,5 +94,24 @@ view|Average_price|
 |  78|   1080649.37|
 |  89|   1107839.15|
 |  77|   1076205.56|
+
 +----+-------------+
 only showing top 20 rows
+
+5.After creating the home_sales temporarytable  cached data,  query that filters out the view ratings with an average price of greater than or equal to $350,000 has been executed and the runtime is determined
+The runtime for cached table is  
+0.42421388626098633 seconds 
+the uncatched runtime is 
+0.6321303844451904 seconds 
+
+6.The runtime for partioned parquet table is  
+--- 0.7460739612579346 seconds ---
+the uncatched runtime is 
+0.6321303844451904 seconds 
+
+
+
+
+
+
+Run the query that filters out the view ratings with an average price of greater than or equal to $350,000. Determine the runtime and compare it to uncached runtime
