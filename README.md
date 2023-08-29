@@ -101,17 +101,16 @@ only showing top 20 rows
 5.After creating the home_sales temporarytable  cached data,  query that filters out the view ratings with an average price of greater than or equal to $350,000 has been executed and the runtime is determined
 The runtime for cached table is  
 0.42421388626098633 seconds 
+
 the uncatched runtime is 
 0.6321303844451904 seconds 
 
 6.The runtime for partioned parquet table is  
 --- 0.7460739612579346 seconds ---
+
 the uncatched runtime is 
 0.6321303844451904 seconds 
 
 
 
 
-
-
-Run the query that filters out the view ratings with an average price of greater than or equal to $350,000. Determine the runtime and compare it to uncached runtime
